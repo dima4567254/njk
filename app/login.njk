@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.min.css">
+</head>
+
+
+<body>
+    {% include 'app/module/_header/_header.html' %}
+      
+    <main class="main">
+        <section class="top">
+            <div class="breadcrumbs breadcrumbs__login">
+                <h2 class="breadcrumbs__title">
+                    Log in
+                </h2>
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">
+                            Home
+                        </a>
+                        <span class="breadcrumbs__delimiter">/</span>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">
+                            Log in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="modal">
+                <label class="modal__label" for="email">
+                    Username or email address *
+                    <input class="modal__input" type="text" id="email" required
+                        oninvalid="this.setCustomValidity('fill in this field!')">
+                </label>
+                <label class="modal__label" for="Password">
+                    Password *
+                    <input class="modal__input" type="text" id="Password" required
+                        oninvalid="this.setCustomValidity('fill in this field!')">
+                </label>
+                <button class="modal__button" type="submit">
+                    Login
+                </button>
+                <div class="modal__inner">
+                    <label class="modal__label modal__label--checkbox" for="Remember-me">
+                        <input class="modal__checkbox" type="checkbox" id="Remember-me" required
+                            oninvalid="this.setCustomValidity('fill in this field!')">
+                        Remember me
+                    </label>
+                    <a class="modal__link" href="#">
+                        Lost your password?
+                    </a>
+                </div>
+                <p class="modal__text">
+                    <a class="modal__link modal__link--text" href="#">
+                        Not registered? No problem
+                    </a>
+                </p>
+                <button class="modal__btn" type="button">Create an account</button>
+            </form>
+
+            <div class="partners partners--wraper">
+                <div class="container container--sm">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners1.png" alt="peterson stephanie">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners2.png" alt="kmn">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners3.png" alt="chainforce">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners4.png" alt="nextg3n">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners5.png" alt="vintage">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners1.png" alt="peterson stephanie">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners2.png" alt="kmn">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners3.png" alt="chainforce">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners4.png" alt="nextg3n">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners5.png" alt="vintage">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners1.png" alt="peterson stephanie">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners2.png" alt="kmn">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners3.png" alt="chainforce">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners4.png" alt="nextg3n">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners5.png" alt="vintage">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include 'app/module/_footer/_footer.html' %}
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
